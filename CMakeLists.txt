@@ -4,12 +4,12 @@
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-project ( luasocket C )
+project ( lsocket C )
 cmake_minimum_required ( VERSION 2.8 )
 include ( cmake/dist.cmake )
 include ( lua )
 
-install_lua_module ( lsocket lsocket.c LINK ${LIB_SOCKET} )
+install_lua_module ( lsocket lsocket.c )
 
 install_example ( samples/ )
 install_doc ( doc/ )
